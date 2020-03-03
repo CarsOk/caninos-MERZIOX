@@ -1,144 +1,105 @@
 <!DOCTYPE html>
+
 <html>
-<link rel="stylesheet" type="text/css" href="estilo.css">
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
 <head>
-	<title>
-	</title>
+	<title></title>
 </head>
 
-<body background="img/tarjeta3.jpg">
-
+<body>
 	<div id="container">
-	
-		<div id="header">
+
+		<header background="img/fondo.png" id="cabecera">
 			
-			<img id="banco" src="img/banco.png">
-			<p id="logan">¿QUE TAN ALTO QUIERES LLEGAR?</p>
-		</div>
+			<div id="cabecera-izq">
+				
+				<div id="container-text1">
+					<p id="text1">CENTRO VETERINARIO</p>
+				</div>
+
+				<p id="text2"> CANINOS Y FELINOS</p>
+			</div>
+			
+			<div id="cabecera-der">
+
+				<img id="gato" src="img/gato.png">
+				<img id="perro" src="img/perro.png">
+			</div>
+		
+		</header>
 
 		<nav id="menu">
-			<a href="start">Inicio</a>
-			<a href="info">¿Quienes somos?</a>
-			<a href="help">Atencion al cliente</a> 
+
+			<a href="ser"> .Servicios. </a>
+			<a href="Pro"> .Productos. </a>
+			<a href="Guar"> .Guarderia. </a>
+			<a id="nada" href="Prom"> .Promociones. </a>
 		</nav>
+
+		<section class="seccion">
+			
+			<article class="articulo1">
+				<div class="img1">
+					<img class="img2" src="img/gato.png">
+				</div>
+					<h1> Como debes alimentar a tu gato</h1>
+				<p>aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui</p>
+			</article>
+
+			<article class="articulo2">
+				<div class="img1">
+					<img class="img2" src="img/perro.png">
+				</div>
+					<h1>Como cuidar tu perro</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut </p>
+
+			</article>
 		
-		<div id="fila1">
+		</section>
 
-			<div id="izqsup">
-				<div id="tituloizq">
-					<p class="text"> INGRESA A TU CUENTA </p>
-
-
-				</div >
-				<div id="formulario">
-					<form>
-						<label for="USUARIO"> Usuario </label>
-						<input type="text" placeholder="Usuario">
+		<section class="seccion-derecha">
+			<div id="tituform">
+				<p>SOLICITAR CITA MEDICA</p>
+			</div>
+			<form id="formulario">
+						<label for="mascota"> Mascota: </label>
+						<input type="text" placeholder="Ingresa nombre">
 						<P></P>
-						<label for="Tipo"> Tipo </label>
-						<input type="text" placeholder="Tipo">
+						<label for="Edad"> Edad: </label>
+						<input type="number" placeholder="Edad">
 						<P></P>
-						<label for="CONTRASEÑA"> Contraseña </label>
-						<input type="password" placeholder="Contraseña">
+						<label for="raza"> Raza: </label>
+						<input type="text" placeholder="Ingresa raza">
 						<P></P>
-						<input type="submit" value="Log In">
+						<label for="fecha"> Fecha: </label>
+						<input type="date" placeholder="dd/mm/aaaa">
+						<p></p>
+						<label for="Hora"> Hora: </label>
+						<input type="Hour" placeholder="--:-- ----">
+						<p></p>
+						<label for="Amo"> Amo: </label>
+						<input type="text" placeholder="Ingrese su nombre">
+						<P></P>
+						<input id="valid" type="submit" value="VALIDAR CITA">
+
+		</section>
 
 
-					</form>
-				</div>	
-			</div>
+		<footer class="pie">
 
-			<div id="censup"> 
-				<div id="titulocen"> 
-					<p class="text"> SOLICITA NUESTROS SERVICIOS </p>
-					<img id="tarjeta" src="img/tarjeta2.png" >
-					<div id="ct1">
-						
-						<p class="text1"> Puedes solicitar nuestra tarjeta Master Card para hacer tus compras fisicas y en linea ¡Animate a conseguirla! </p>
+			<p class="pie-texto">Contactenos </br> Linea gratuita </br> Correo: preguntas@caninosyfelinos.com </p>
 
-					</div>
-					
-				</div>
-				
-			</div>
+		</footer>
 
-			<div id="dersup"> 
-				<div id="tituloder">
-					<p class="text"> AHORRO DE ESTUDIANTES </p>
-
-				</div>
-				 
-				 <img id="libro" src="img/libro.png">
-				 	<div id="ct2">
-				 		<p class="text1"> Si eres universitario puedes obtener una de nuestras cuentas de ahorro ¡Para un gran futuro! </p>
-				 		
-				 	</div>
-
-			</div>
-		
-
-		</div>
-		
-
-		<div id="fila2"> 
-				
-			<div id="izqinf">
-				<div id="cl1">
-			<ul id="list1">
-			  <li><a class="text4" href="#">Transacciones</a></li>
-			  <li><a class="text3" href="#">Banca personal</a></li>
-			  <li><a class="text3" href="#">Banca empresarial </a></li>
-			  <li><a class="text3" href="#">Banca seguro</a></li>
-			  <li><a class="text3" href="#">Pago de factura</a></li>
-			  <li><a class="text4" href="#">Targeta de credito</a></li>
-			  <li><a class="text3" href="#">Credi Davivienda</a></li>
-			  <li><a class="text3" href="#">Credi Master Card</a></li>
-			</ul>
-				</div>
-			</div>
-			<div id="ceninf"> 
-				<div id="titucen"> 
-					<p class="text"> CREDITO PARA VEHICULOS </p>
-					<img id="auto" src="img/auto.png" >
-					<div id="ct1">
-						
-						<p class="text1"> Puedes solicitar uno de nuestros creditos para obtener tu propio vehiculo y pagarlo a cuotas  ¡Animate a conseguirlo! </p>
-
-					</div>
-					
-				</div>
-				
-			</div>
-
-			<div id="derinf"> 
-				<div id="tituder">
-					<p class="text"> CREDITO DE HIPOTECA </p>
-
-				</div>
-				 
-				 <img id="hipoteca" src="img/hipoteca.png">
-				 	<div id="ct2">
-				 		<p class="text1"> Si en algun momento te ves apurado nosotros te ayudamos ¡Adelante no te desanimes! </p>
-				 		
-				 	</div>
-
-			</div>
-		</div>
-	
-
-		
-			<div id="foot">
-				<p class="text2"> Numero de contacto: 018000 545454</p>
-				<p></p>
-				<p class="text2">	Correo de contacto: bancolombia@gmail.com  </p>
-				<P></P>
-				<P class="text2"> Direccion: calle 90 cra 4a</P>
-			</div>
-
-		
-
-</div>
+	</div>
 
 </body>
 </html>
